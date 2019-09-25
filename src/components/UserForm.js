@@ -48,7 +48,7 @@ export const UserForm = () => {
                         <br />
                         <br />
                         <input
-                            onClick={()=>history.push('/home')}
+                            onClick={()=>history.push(`/home/${auth.name.replace(' ','')}`)}
                             style={{width: '100%'}}
                             type="submit"
                             value="Submit" />

@@ -13,11 +13,11 @@ const initialState = {
 // or Object.assign
 //----------------------------
 const AuthReducer = (state = {}, action) => {
-    switch(action.type){
+    switch (action.type) {
         case "SET_NAME":
-            return {...state, name: action.payload}
+            return { ...state, name: action.payload }
         case "SET_AVATAR":
-            return {...state, avatar: action.payload}
+            return { ...state, avatar: action.payload }
         default:
             return state;
     }
@@ -32,8 +32,8 @@ export const AuthProvider = ({ children }) => {
         <AuthContext.Provider value={{
             name: state.name,
             avatar: state.avatar,
-            setName: name => dispatch({type: "SET_NAME", payload: name}),
-            setAvatar: avatar => dispatch({type: "SET_AVATAR", payload: avatar})
+            setName: name => dispatch({ type: "SET_NAME", payload: name }),
+            setAvatar: avatar => dispatch({ type: "SET_AVATAR", payload: avatar })
         }}>
             {children}
         </AuthContext.Provider>

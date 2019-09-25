@@ -27,13 +27,13 @@ const CustomTheme = {
 const ThemeReducer = (state = {
     backgroundColor: config.backgroundColor
 }, action) => {
-    switch(action.type){
+    switch (action.type) {
         case "SET_CUSTOM":
-            return {...CustomTheme}
+            return { ...CustomTheme }
         case "SET_BLUE":
-            return {...BlueTheme}
+            return { ...BlueTheme }
         case "SET_ORANGE":
-            return {...OrangeTheme}
+            return { ...OrangeTheme }
         default:
             return state;
     }
@@ -43,15 +43,15 @@ const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
     const [state, dispatch] = useReducer(ThemeReducer, CustomTheme);
-    
+
     return (
         // Some actions to not require a payload
         <ThemeContext.Provider value={{
             theme: state,
             backgroundColor: state.backgroundColor,
-            setCustom: ()=> dispatch({type: "SET_CUSTOM"}),
-            setBlue: () => dispatch({type: "SET_BLUE"}),
-            setOrange: () => dispatch({type: "SET_ORANGE"})
+            setCustom: () => dispatch({ type: "SET_CUSTOM" }),
+            setBlue: () => dispatch({ type: "SET_BLUE" }),
+            setOrange: () => dispatch({ type: "SET_ORANGE" })
         }}>
             {children}
         </ThemeContext.Provider>

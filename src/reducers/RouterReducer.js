@@ -18,6 +18,6 @@ export const RouterProvider = ({ children }) => (
 
 export const useRouter = () => useContext(RouterContext);
 export const useHistory = () => {
-    const {history} = useRouter();
-    return history;
+  const { history } = useRouter();
+  return history;
 }

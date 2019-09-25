@@ -1,6 +1,6 @@
 export const config = {
-    title:"CHANGE ME",
-    backgroundColor: "yellow",
+    title:"Big Case",
+    backgroundColor: "purple",
     color: "black",
     email: 'cwylie@redhat.com'
 }

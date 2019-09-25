@@ -15,7 +15,7 @@ export default function AppContainer() {
                 <TopPanel />
                 <Fragment>
                     <Route component={UserForm} path="/" exact />
-                    <Route component={Home} path="/home" exact />
+                    <Route component={Home} path="/home/:name" exact />
                 </Fragment>
                 <BottomPanel />
             </AuthProvider>
