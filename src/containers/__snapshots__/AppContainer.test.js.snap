@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "purple",
+        "color": "black",
+        "display": "flex",
+        "height": "70px",
+        "justifyContent": "space-between",
+        "left": 0,
+        "padding": "15px",
+        "position": "absolute",
+        "right": 0,
+        "width": "100% !important",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <img
+        src="hatLogo.png"
+        style={
+          Object {
+            "height": "80px",
+          }
+        }
+      />
+      <h2
+        style={
+          Object {
+            "fontFamily": "Red Hat Display",
+            "padding": "10px",
+          }
+        }
+      >
+        Big Case
+      </h2>
+    </div>
+    <div
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <div>
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "purple",
+              "borderRadius": "15px",
+              "fontSize": "1em",
+              "height": "50px",
+              "margin": "20px",
+              "width": "120px",
+            }
+          }
+        >
+          Custom
+        </button>
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "orange",
+              "borderRadius": "15px",
+              "fontSize": "1em",
+              "height": "50px",
+              "margin": "20px",
+              "width": "120px",
+            }
+          }
+        >
+          Orange
+        </button>
+        <button
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "blue",
+              "borderRadius": "15px",
+              "fontSize": "1em",
+              "height": "50px",
+              "margin": "20px",
+              "width": "120px",
+            }
+          }
+        >
+          Blue
+        </button>
+      </div>
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "column",
+          }
+        }
+      >
+        <img
+          src="user.png"
+          style={
+            Object {
+              "borderRadius": "20px",
+              "height": "60px",
+              "width": "60px",
+            }
+          }
+        />
+        <div>
+          Example User
+        </div>
+      </div>
+    </div>
+  </div>,
+  <form
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+        "height": "100vh",
+        "justifyContent": "center",
+        "textAlign": "left",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "border": "1px solid black",
+          "borderRadius": "15px",
+          "padding": "10px",
+        }
+      }
+    >
+      <label>
+        <h5
+          style={
+            Object {
+              "textAlign": "center",
+            }
+          }
+        >
+          User Form
+        </h5>
+        Name: 
+         
+        <input
+          name="name"
+          onChange={[Function]}
+          type="text"
+          value="Example User"
+        />
+      </label>
+      <br />
+      <label>
+         Avatar 
+         
+        <input
+          onChange={[Function]}
+          type="file"
+        />
+      </label>
+      <br />
+      <br />
+      <br />
+      <input
+        onClick={[Function]}
+        style={
+          Object {
+            "width": "100%",
+          }
+        }
+        type="submit"
+        value="Submit"
+      />
+    </div>
+  </form>,
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "purple",
+        "bottom": 0,
+        "color": undefined,
+        "display": "flex",
+        "height": "70px",
+        "justifyContent": "center",
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "width": "100% !important",
+      }
+    }
+  >
+    Send me an e-
+    <a
+      href="mailto: cwylie@redhat.com?&subject=SiteTemplate&body=Nice..."
+    >
+      <div>
+         
+      </div>
+       mail
+    </a>
+  </div>,
+]
+`;
